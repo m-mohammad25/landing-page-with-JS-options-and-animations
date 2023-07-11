@@ -1,0 +1,34 @@
+section.our-skills {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: $light-gray;
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    .skill {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      padding: 0.8rem 10px;
+
+      .name {
+        width: 140px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.1rem;
+      }
+      .progress {
+        width: 100%;
+        height: 1.8rem;
+        border-radius: 6px;
+        .progress-bar {
+          width: 0;
+          transition: all 0.5s;
+        }
+      }
+    }
+  }
+}

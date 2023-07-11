@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- normalize -->
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+
+    <!-- my style -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <!-- font-awsome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+
+    <title>Special Design</title>
+  </head>
+  <body>
+    <ul class="bullets">
+      <li>
+        <div class="bullet" data-section="about-us">
+          <div class="my-tooltip" >about us</div>
+        </div>
+      </li>
+      <li>
+        <div class="bullet" data-section="our-skills">
+          <div class="my-tooltip" >our skills</div>
+        </div>
+      </li>
+      <li>
+        <div class="bullet" data-section="our-gallery">
+          <div class="my-tooltip" >our gallery</div>
+        </div>
+      </li>
+      <li>
+        <div class="bullet" data-section="timeline">
+          <div class="my-tooltip" >timeline</div>
+        </div>
+      </li>
+      <li>
+        <div class="bullet" data-section="our-features">
+          <div class="my-tooltip" >features</div>
+        </div>
+      </li>
+      <li>
+        <div class="bullet" data-section="testimonials">
+          <div class="my-tooltip" >testimonials</div>
+        </div>
+      </li>
+    </ul>
+    <main>
+      <aside class="settings-box" id="settings-box">
+        <div class="toggle-settings">
+          <i class="fa fa-gear gear-icon"></i>
+        </div>
+        <div class="colors-div">
+          <h6>Colors</h6>
+          <ul>
+            <li><button id="0" class="clicked"></button></li>
+            <li><button id="1"></button></li>
+            <li><button id="2"></button></li>
+            <li><button id="3"></button></li>
+            <li><button id="4"></button></li>
+          </ul>
+        </div>
+
+        <div class="background-control-div">
+          <h6>Random Backgrounds</h6>
+          <div class="btns">
+            <button class="active">Yes</button>
+            <button>No</button>
+          </div>
+        </div>
+
+        <div class="show-bullets-div">
+          <h6>Show Bullets</h6>
+          <div class="btns">
+            <button class="active">Yes</button>
+            <button>No</button>
+          </div>
+        </div>
+
+        <button class="reset-btn">Reset Options</button>
+      </aside>
+      <section class="landing">
+        <div class="overlay"></div>
+        <div class="container">
+          <header>
+            <div class="logo">Special Design</div>
+            <nav class="d-none d-lg-block">
+              <ul class="links">
+                <li><a href="#about-us">about</a></li>
+                <li><a href="#our-skills">skills</a></li>
+                <li><a href="#our-gallery">gallery</a></li>
+                <li><a href="#timeline">timeline</a></li>
+                <li><a href="#our-features">features</a></li>
+                <li><a href="#testimonials">testimonials</a></li>
+              </ul>
+            </nav>
+            <div class="toggle-btn d-flex d-lg-none">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <ul class="toggle-links d-lg-none">
+              <li><a href="#about-us">about</a></li>
+              <li><a href="#our-skills">skills</a></li>
+              <li><a href="#our-gallery">gallery</a></li>
+              <li><a href="#timeline">timeline</a></li>
+              <li><a href="#our-features">features</a></li>
+              <li><a href="#testimonials">testimonials</a></li>
+            </ul>
+          </header>
+        </div>
+
+        <div class="intro-text container">
+          <h2>we are a <span>creative</span> agency</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+            odit nihil ullam nesciunt quidem iste
+          </p>
+        </div>
+      </section>
+
+      <section class="about-us" id="about-us">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 py-md-4">
+              <h2 class="text-center text-md-left mb-2">about us</h2>
+              <p class="text-center text-md-left my-2 my-md-0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis ipsum, tenetur dolores esse magni ratione
+                distinctio! Quod iusto neque fuga, maxime quos nostrum quibusdam
+                dicta deserunt blanditiis non voluptate id?
+              </p>
+            </div>
+            <div class="col-md-6 text-center">
+              <img src="assets/imgs/about-us.jpg" alt="about us" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="our-skills" id="our-skills">
+        <div class="container">
+          <h2 class="section-heading">Our Skills</h2>
+          <div class="skills">
+            <div class="skill flex-column flex-md-row">
+              <span class="name pt-1 mb-3 mb-md-0 pt-md-0">HTML</span>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  data-progress="80%"
+                ></div>
+              </div>
+            </div>
+
+            <div class="skill flex-column flex-md-row">
+              <span class="name pt-1 mb-3 mb-md-0 pt-md-0">CSS</span>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  data-progress="70%"
+                ></div>
+              </div>
+            </div>
+            <div class="skill flex-column flex-md-row">
+              <span class="name pt-1 mb-3 mb-md-0 pt-md-0">JavaScript</span>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  data-progress="90%"
+                ></div>
+              </div>
+            </div>
+            <div class="skill flex-column flex-md-row">
+              <span class="name pt-1 mb-3 mb-md-0 pt-md-0">Python</span>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  data-progress="80%"
+                ></div>
+              </div>
+            </div>
+            <div class="skill flex-column flex-md-row">
+              <span class="name pt-1 mb-3 mb-md-0 pt-md-0">PHP</span>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  data-progress="90%"
+                ></div>
+              </div>
+            </div>
+            <div class="skill flex-column flex-md-row">
+              <span class="name pt-1 mb-3 mb-md-0 pt-md-0">MySQL</span>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  data-progress="70%"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="our-gallery" id="our-gallery">
+        <h2 class="section-heading">our gallery</h2>
+        <div class="container">
+          <div class="row g-3 justify-content-center">
+            <div class="col-auto">
+              <img src="assets/imgs/1.jpg" alt="img-1" />
+            </div>
+            <div class="col-auto">
+              <img src="assets/imgs/2.jpg" alt="img-2" />
+            </div>
+            <div class="col-auto">
+              <img src="assets/imgs/3.jpg" alt="img-3" />
+            </div>
+            <div class="col-auto">
+              <img src="assets/imgs/4.jpg" alt="img-4" />
+            </div>
+            <div class="col-auto">
+              <img src="assets/imgs/5.jpg" alt="img-5" />
+            </div>
+            <div class="col-auto">
+              <img src="assets/imgs/6.png" alt="img-6" />
+            </div>
+            <div class="col-auto">
+              <img src="assets/imgs/7.jpg" alt="img-7" />
+            </div>
+            <div class="col-auto">
+              <img src="assets/imgs/8.jpg" alt="img-8" />
+            </div>
+            <div class="col-auto">
+              <img src="assets/imgs/9.jpg" alt="img-9" />
+            </div>
+            <div class="col-auto">
+              <img src="assets/imgs/10.jpg" alt="img-10" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="timeline" id="timeline">
+        <div class="container">
+          <div class="year">2018</div>
+          <div class="row mt-5">
+            <div class="col-auto col-md-6 pe-md-4">
+              <div class="bullet-right d-none d-md-block"></div>
+              <div class="content">
+                <div class="arrow-right d-none d-md-block"></div>
+                <h4>Testing Heading</h4>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Deleniti ex molestiae illo nisi quaerat veniam beatae aliquid
+                  eligendi. Aliquid tenetur quas ex, sequi porro nam commodi
+                  placeat maxime nobis quam?
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-end mt-3 mb-5">
+            <div class="col-auto col-md-6 ps-md-4">
+              <div class="bullet-left d-none d-md-block"></div>
+              <div class="content">
+                <div class="arrow-left d-none d-md-block"></div>
+                <h4>Testing Heading</h4>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Deleniti ex molestiae illo nisi quaerat veniam beatae aliquid
+                  eligendi. Aliquid tenetur quas ex, sequi porro nam commodi
+                  placeat maxime nobis quam?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="year">2016</div>
+          <div class="row mt-5">
+            <div class="col-auto col-md-6 pe-md-4">
+              <div class="bullet-right d-none d-md-block"></div>
+              <div class="content">
+                <div class="arrow-right d-none d-md-block"></div>
+                <h4>Testing Heading</h4>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Deleniti ex molestiae illo nisi quaerat veniam beatae aliquid
+                  eligendi. Aliquid tenetur quas ex, sequi porro nam commodi
+                  placeat maxime nobis quam?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-5">
+            <div class="col-auto col-md-6 mt-3 pe-md-4">
+              <div class="bullet-right d-none d-md-block"></div>
+              <div class="content">
+                <div class="arrow-right d-none d-md-block"></div>
+                <h4>Testing Heading</h4>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Deleniti ex molestiae illo nisi quaerat veniam beatae aliquid
+                  eligendi. Aliquid tenetur quas ex, sequi porro nam commodi
+                  placeat maxime nobis quam?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="our-features" id="our-features">
+        <div class="container">
+          <h2 class="section-heading">our features</h2>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col">
+              <div class="feature-card">
+                <img src="assets/imgs/programming.svg" alt="programming" />
+                <h3 class="card-title">development</h3>
+                <p>
+                  We are professional marketeers, we will do anything you
+                  imagine in no time.
+                </p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="feature-card">
+                <img src="assets/imgs/advertising.svg" alt="programming" />
+                <h3 class="card-title">Marketing</h3>
+                <p>
+                  We are professional marketeers, we will do anything you
+                  imagine in no time.
+                </p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="feature-card">
+                <img src="assets/imgs/hosting-icon.svg" alt="programming" />
+                <h3 class="card-title">hosting</h3>
+                <p>
+                  We are professional marketeers, we will do anything you
+                  imagine in no time.
+                </p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="feature-card">
+                <img src="assets/imgs/mobile-app.svg" alt="programming" />
+                <h3 class="card-title">mobile develope</h3>
+                <p>
+                  We are professional marketeers, we will do anything you
+                  imagine in no time.
+                </p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="feature-card">
+                <img src="assets/imgs/graphic-design.svg" alt="programming" />
+                <h3 class="card-title">cloud and servers<h3>
+                <p>
+                  We are professional marketeers, we will do anything you
+                  imagine in no time.
+                </p>
+              </div>
+              </div>
+            <div class="col">
+              <div class="feature-card">
+                <img src="assets/imgs/web-design.svg" alt="programming" />
+                <h3 class="card-title">SEO</h3>
+                <p>
+                  We are professional marketeers, we will do anything you
+                  imagine in no time.
+                </p>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+      </section>
+      <section class="testimonials" id="testimonials">
+        <div class="container">
+          <h2>testimonials</h2>
+          <div class="row gy-3 gy-lg-0">
+            <div class="col-md">
+              <div class="test-box">
+                <p>I am very happy with the product its amazing and i recieve it very fast and the price was amazing.</p>
+                <div class="profile flex-column flex-lg-row  align-items-center align-items-lg-start">
+                  <img src="https://placehold.it/80/EEE" alt="img">
+                  <div class="details">
+                    <h4 class="name">ahmed mosaad</h4>
+                    <h5 class="title">CEO At Company</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md">
+              <div class="test-box">
+                <p>I am very happy with the product its amazing and i recieve it very fast and the price was amazing.</p>
+                <div class="profile flex-column flex-lg-row  align-items-center align-items-lg-start">
+                  <img src="https://placehold.it/80/EEE" alt="img">
+                  <div class="details">
+                    <h4 class="name">mohamed ibrahim</h4>
+                    <h5 class="title">CEO At Company</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="test-box">
+                <p>I am very happy with the product its amazing and i recieve it very fast and the price was amazing.</p>
+                <div class="profile flex-column flex-lg-row  align-items-center align-items-lg-start">
+                  <img src="https://placehold.it/80/EEE" alt="img">
+                  <div class="details">
+                    <h4 class="name">sherief ashraf</h4>
+                    <h5 class="title">CEO At Company</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <section class="contact-us" id="contact-us">
+        <div class="container">
+         <h2 class="section-heading">contact us</h2>
+         <form action="#">
+          <div class="row">
+            <div class="col-md">
+              <input type="text" placeholder="Your Name" name="name" id="name">
+              <input type="text" placeholder="Your Phone" name="phone" id="phone">
+              <input type="email" placeholder="Your Email" name="email" id="email">
+              <input type="text" placeholder="Subject" name="subject" id="subject">
+            </div>
+            <div class="col-md">
+              <textarea name="msg" placeholder="Your Message" id="msg" ></textarea>
+              <input type="submit" value="Send">
+            </div>
+          </div>
+         </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <span>created with love by <a href="http://linkedin.com/in/m-mohammad25/">M.Mohammad</a></span>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- my js -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

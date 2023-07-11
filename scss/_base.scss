@@ -1,0 +1,11 @@
+:root {
+  --mainColor: #ff9800;
+}
+
+.section-heading {
+  color: var(--mainColor);
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 50px;
+}
+$light-gray: #eee;

@@ -1,0 +1,54 @@
+section.testimonials {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: var(--mainColor);
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #333;
+    left: 50%;
+    z-index: -1;
+  }
+  h2 {
+    text-transform: capitalize;
+    color: white;
+    margin-bottom: 40px;
+  }
+  .test-box {
+    background-color: white;
+    padding: 1rem;
+
+    p {
+      font-style: italic;
+      color: #707070;
+      margin-bottom: 1.3rem;
+    }
+    .profile {
+      display: flex;
+      justify-content: flex-start;
+      column-gap: 1.4rem;
+      img {
+        border-radius: 50%;
+        width: 80px;
+      }
+      .details {
+        .name {
+          text-transform: capitalize;
+          font-size: 1.1rem;
+          margin: 14px auto 8px;
+        }
+        .title {
+          font-size: 1.1rem;
+          color: #707070;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}

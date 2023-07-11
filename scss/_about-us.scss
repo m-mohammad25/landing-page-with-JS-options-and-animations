@@ -1,0 +1,18 @@
+section.about-us {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  h2 {
+    text-transform: capitalize;
+    color: var(--mainColor);
+  }
+  p {
+    line-height: 1.8;
+    color: #767676;
+    font-size: 1.1rem;
+    margin: 0;
+  }
+  img {
+    height: auto;
+    width: 250px;
+  }
+}
